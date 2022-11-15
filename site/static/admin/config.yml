@@ -18,10 +18,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "docs"
     label: "Docs"
-    files:
-      - folder: "site/content/docs"
-        label: "Documentation Page"
-        name: "doc"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
+    folder: "site/content/docs"
+    create: true
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Subtitle, name: subtitle, widget: string}
